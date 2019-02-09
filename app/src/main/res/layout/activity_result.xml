@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity"
+    android:baselineAligned="false">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_weight="1">
+
+        <!--prediction part-->
+        <LinearLayout
+            android:id="@+id/llPredictionPart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="2">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <!--prediction number-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1">
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="3dp">
+
+                        <TextView
+                            android:id="@+id/tvPreNum1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text=" ?"
+                            android:fontFamily="@font/heebo"
+                            android:background="#696464"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold"
+                            android:textSize="25sp" />
+
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="3dp">
+
+                        <TextView
+                            android:id="@+id/tvPreNum2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text=" ?"
+                            android:gravity="center"
+                            android:fontFamily="@font/heebo"
+                            android:background="#696464"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold"
+                            android:textSize="25sp" />
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="3dp">
+
+                        <TextView
+                            android:id="@+id/tvPreNum3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text=" ?"
+                            android:gravity="center"
+                            android:fontFamily="@font/heebo"
+                            android:background="#696464"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold"
+                            android:textSize="25sp" />
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="3dp">
+
+                        <TextView
+                            android:id="@+id/tvPreNum4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text=" ?"
+                            android:gravity="center"
+                            android:fontFamily="@font/heebo"
+                            android:background="#696464"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold"
+                            android:textSize="25sp" />
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="3dp">
+
+                        <TextView
+                            android:id="@+id/tvPreNum5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text=" ?"
+                            android:gravity="center"
+                            android:fontFamily="@font/heebo"
+                            android:background="#696464"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold"
+                            android:textSize="25sp"/>
+
+
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tvPreNumShowHints"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Click to show full result"
+                        android:padding="10dp"
+                        android:textAlignment="center"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <!--user input part-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <!--input-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="3">
+
+                <!--number 1-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="3dp">
+
+                        <TextView
+                            android:id="@+id/tvNum11"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="*"
+                            android:fontFamily="@font/heebo"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="3dp">
+
+                        <TextView
+                            android:id="@+id/tvNum12"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="*"
+                            android:gravity="center"
+                            android:fontFamily="@font/heebo"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="3dp">
+
+                        <TextView
+                            android:id="@+id/tvNum13"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="*"
+                            android:gravity="center"
+                            android:fontFamily="@font/heebo"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="3dp">
+
+                        <TextView
+                            android:id="@+id/tvNum14"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="*"
+                            android:gravity="center"
+                            android:fontFamily="@font/heebo"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+                <!--number 2-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="3dp">
+
+                        <TextView
+                            android:id="@+id/tvNum21"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="*"
+                            android:fontFamily="@font/heebo"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="3dp">
+
+                        <TextView
+                            android:id="@+id/tvNum22"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="*"
+                            android:gravity="center"
+                            android:fontFamily="@font/heebo"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="3dp">
+
+                        <TextView
+                            android:id="@+id/tvNum23"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="*"
+                            android:gravity="center"
+                            android:fontFamily="@font/heebo"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="3dp">
+
+                        <TextView
+                            android:id="@+id/tvNum24"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="*"
+                            android:gravity="center"
+                            android:fontFamily="@font/heebo"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+                <!--number 3-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="3dp">
+
+                        <TextView
+                            android:id="@+id/tvNum31"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="*"
+                            android:fontFamily="@font/heebo"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="3dp">
+
+                        <TextView
+                            android:id="@+id/tvNum32"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="*"
+                            android:gravity="center"
+                            android:fontFamily="@font/heebo"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="3dp">
+
+                        <TextView
+                            android:id="@+id/tvNum33"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="*"
+                            android:gravity="center"
+                            android:fontFamily="@font/heebo"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="3dp">
+
+                        <TextView
+                            android:id="@+id/tvNum34"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="*"
+                            android:gravity="center"
+                            android:fontFamily="@font/heebo"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+                <!--number 4-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="3dp">
+
+                        <TextView
+                            android:id="@+id/tvNum41"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="*"
+                            android:fontFamily="@font/heebo"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="3dp">
+
+                        <TextView
+                            android:id="@+id/tvNum42"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="*"
+                            android:gravity="center"
+                            android:fontFamily="@font/heebo"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="3dp">
+
+                        <TextView
+                            android:id="@+id/tvNum43"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="*"
+                            android:gravity="center"
+                            android:fontFamily="@font/heebo"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="3dp">
+
+                        <TextView
+                            android:id="@+id/tvNum44"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="*"
+                            android:gravity="center"
+                            android:fontFamily="@font/heebo"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+                <!--number 5-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="3dp">
+
+                        <TextView
+                            android:id="@+id/tvNum51"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="*"
+                            android:fontFamily="@font/heebo"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="3dp">
+
+                        <TextView
+                            android:id="@+id/tvNum52"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="*"
+                            android:gravity="center"
+                            android:fontFamily="@font/heebo"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="3dp">
+
+                        <TextView
+                            android:id="@+id/tvNum53"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="*"
+                            android:gravity="center"
+                            android:fontFamily="@font/heebo"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="3dp">
+
+                        <TextView
+                            android:id="@+id/tvNum54"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="*"
+                            android:gravity="center"
+                            android:fontFamily="@font/heebo"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <!--question-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tvAns"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_slab"
+                        android:textAlignment="center"
+                        android:text="Summation"
+                        android:textColor="#000"
+                        android:textSize="16sp"
+                        android:layout_marginTop="20dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="bottom|end">
+
+                    <Button
+                        android:id="@+id/finish"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="finish"
+                        android:textColor="#000"
+                        android:background="#0EDB16"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="5dp"/>
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
